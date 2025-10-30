@@ -1,0 +1,35 @@
+.footer-section {
+  background-color: #f5f0e1; /* soft beige */
+  color: #4b3f2f; /* dark brown text */
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #d9b382;
+}
+
+.footer-section .social-icons a,
+.footer-section .social-icons Link {
+  color: #5c4532;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-section .social-icons a:hover,
+.footer-section .social-icons Link:hover {
+  color: #b08b5b;
+  transform: scale(1.2);
+}
+
+.footer-section p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-section {
+  background-color: #f5f0e1;
+  color: #4b3f2f;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #d9b382;
+  position: relative; /* optional, ensures it’s visible */
+  z-index: 10; /* make sure not hidden behind other elements */
+}

@@ -1,0 +1,72 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf6ec, #f5f0e1); /* same as Hero */
+  color: #4b3f2f;
+  padding: 2rem;
+}
+
+.about-title {
+  width: 100%;
+  color: #5c4532; /* darker heading */
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-badge {
+  background: linear-gradient(135deg, #f3e1c9, #fbe9d5); /* beige pastel */
+  color: #5c4532; /* darker text for contrast */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.about-image img {
+  border: 2px solid #d9b382; /* soft brown border */
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    text-align: center;
+  }
+}
