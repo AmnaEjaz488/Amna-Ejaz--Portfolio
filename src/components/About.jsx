@@ -31,13 +31,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className="about-image">
-          <img 
-            src="https://via.placeholder.com/400x400" 
-            alt="Amna Ejaz" 
-            className="img-fluid rounded shadow"
-          />
-        </div>
+        
       </div>
       <p className="mt-4 text-center lead">
         My goal is to leverage my diverse experience and technical skills to build impactful, user-focused web applications while continuously learning and growing as a full-stack developer.

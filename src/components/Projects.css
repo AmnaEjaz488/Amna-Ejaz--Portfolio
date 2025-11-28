@@ -1,5 +1,6 @@
+/* Projects Section */
 .projects-section {
-  background: linear-gradient(135deg, #fdf6ec, #f5f0e1); /* same beige */
+  background: linear-gradient(135deg, #fdf6ec, #f5f0e1);
   color: #4b3f2f;
   padding: 4rem 2rem;
 }
@@ -11,15 +12,59 @@
   margin-bottom: 3rem;
 }
 
+/* Project Card */
 .project-card {
-  background: #fff7f0; /* light beige card */
+  background: #fff7f0;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
+
+/* Card Image */
+.project-card img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+/* Tech Stack Text */
+.project-card .tech-stack,
+.project-card .text-muted {
+  font-size: 0.875rem;
+  color: #7a6451;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.project-card .btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.project-card .btn-outline-secondary {
+  color: #5c4532;
+  border-color: #5c4532;
+}
+
+.project-card .btn-outline-secondary:hover {
+  background-color: #5c4532;
+  color: #fff;
+}
+
+/* Cards without images: add extra spacing for alignment */
+.project-card:not(:has(img)) .card-body {
+  padding-top: 1.5rem; /* makes space similar to cards with images */
+}
+
+
