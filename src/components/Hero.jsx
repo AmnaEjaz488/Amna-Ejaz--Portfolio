@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import "./Hero.css";
 import profilePicture from "../assets/profilePicture.png";
 
@@ -21,12 +22,17 @@ const Hero = () => {
             I’m also exploring AI & Prompt Engineering to bring intelligent features to modern web experiences.
           </p>
           <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary me-3 mb-2">
-              View My Work
-            </a>
-            <a href="/resume.pdf" className="btn btn-outline-secondary mb-2">
-              Download Resume
-            </a>
+           <Link to="/projects" className="btn btn-primary me-3 mb-2">
+    View My Work
+  </Link>
+            <a
+  href="/resume.pdf"
+  className="btn btn-outline-secondary mb-2"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Download Resume
+</a>
           </div>
         </div>
 
