@@ -8,8 +8,7 @@ const skills = [
   "Object-Oriented Programming", "Single Page React Apps", "SQL",
   "MVC Paradigm", "React", "NoSQL", "MERN Stack", "Testing",
   "CI/CD Pipelines", "Python Fundamentals", "OOP with Python",
-  "Prompt Engineering", "Dreaming up something fantastic",
-  "Understanding the bounds of reasonable and achievable"
+  "Prompt Engineering", "AI Integration"
 ];
 
 const About = () => {
