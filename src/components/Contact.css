@@ -11,6 +11,8 @@
 .contact-title {
   font-weight: 700;
   color: #5c4532;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-form {
@@ -21,6 +23,7 @@
   max-width: 500px;
 }
 
+/* Inputs and Textarea */
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem 1rem;
@@ -29,15 +32,17 @@
   font-size: 1rem;
   background-color: #fff7f0;
   color: #4b3f2f;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #b08b5b;
-  box-shadow: 0 0 5px rgba(176,139,91,0.4);
+  box-shadow: 0 0 8px rgba(176, 139, 91, 0.4);
 }
 
+/* Submit Button */
 .contact-form button {
   background-color: #d9b382;
   color: #fff;
@@ -52,6 +57,17 @@
 .contact-form button:hover {
   background-color: #b08b5b;
   transform: scale(1.05);
+}
+
+/* Status Message */
+.contact-content p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #5c4532;
+  text-align: center;
+  min-height: 1.5rem; /* reserve space so page doesn’t jump */
+  transition: opacity 0.4s ease;
 }
 
 /* Responsive */
